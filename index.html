@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Auditoría Web Gratuita | Holfkings — Descubre por qué tu web no vende</title>
+  <meta name="description" content="Auditoría web gratuita: te digo en 24h los errores que hacen que tu web no atraiga clientes. Sin compromiso." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">Holfkings<span>.</span></div>
+    <a class="btn btn-ghost" href="https://holfkings.github.io/portafolio-site/" target="_blank" rel="noopener">Ver portafolio</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="badge">100% gratis · respuesta en 24h</span>
+        <h1>Auditoría Web <span class="grad">Gratuita</span></h1>
+        <p class="lead">
+          Si tu web no trae clientes, no es mala suerte: tiene errores que se pueden arreglar.
+          Déjame tu link y te envío un diagnóstico claro con lo que está frenando tus ventas.
+        </p>
+
+        <form id="auditForm" class="audit-form" novalidate>
+          <div class="field">
+            <label for="name">Tu nombre</label>
+            <input type="text" id="name" name="name" placeholder="Ej. María López" required />
+          </div>
+          <div class="field">
+            <label for="email">Tu email</label>
+            <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required />
+          </div>
+          <div class="field">
+            <label for="url">URL de tu web</label>
+            <input type="url" id="url" name="url" placeholder="https://tunegocio.com" required />
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            Quiero mi auditoría gratis →
+          </button>
+          <p class="form-note">Sin spam. Solo te escribo con tu diagnóstico.</p>
+          <p id="formError" class="form-error" role="alert"></p>
+        </form>
+      </div>
+
+      <aside class="hero-side">
+        <div class="card-result" id="resultCard" hidden>
+          <div class="check">✓</div>
+          <h3>¡Listo!</h3>
+          <p>Se abrió tu WhatsApp con el mensaje listo. Solo toca <b>Enviar</b> y te dejo la auditoría en menos de 24h.</p>
+        </div>
+        <ul class="trust">
+          <li><b>+15</b> webs auditadas</li>
+          <li><b>0 COP</b> por la auditoría</li>
+          <li><b>24h</b> promedio de respuesta</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="steps">
+      <h2>Cómo funciona</h2>
+      <div class="step-grid">
+        <article class="step">
+          <span class="num">1</span>
+          <h3>Dejás tu web</h3>
+          <p>Pegás la URL en el formulario. Tarda 10 segundos.</p>
+        </article>
+        <article class="step">
+          <span class="num">2</span>
+          <h3>Te audito gratis</h3>
+          <p>Reviso velocidad, diseño móvil, SEO y mensaje de venta.</p>
+        </article>
+        <article class="step">
+          <span class="num">3</span>
+          <h3>Recibís el diagnóstico</h3>
+          <p>Te digo qué arreglar y cuánto costaría. Sin compromiso.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2>Preguntas frecuentes</h2>
+      <details>
+        <summary>¿La auditoría es realmente gratis?</summary>
+        <p>Sí. La revisión inicial no cuesta nada. Solo te cobro si decides que arregle o construya tu web.</p>
+      </details>
+      <details>
+        <summary>¿Qué necesito para empezar?</summary>
+        <p>Solo la URL de tu sitio y un correo para enviarte el diagnóstico.</p>
+      </details>
+      <details>
+        <summary>¿Tardo en recibir respuesta?</summary>
+        <p>Menos de 24 horas hábiles en la mayoría de los casos.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Hecho por <a href="https://holfkings.github.io/portafolio-site/" target="_blank" rel="noopener">Holfkings</a> — Desarrollador Web Freelance · Cúcuta, Colombia</p>
+    <p><a href="https://wa.me/573155576332" target="_blank" rel="noopener">WhatsApp</a> · <a href="https://github.com/Holfkings" target="_blank" rel="noopener">GitHub</a></p>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/573155576332" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
