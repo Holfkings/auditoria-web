@@ -18,14 +18,19 @@ form.addEventListener("submit", function (e) {
 
   if (!name) { errorBox.textContent = "Escribí tu nombre."; return; }
   if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { errorBox.textContent = "Email no válido."; return; }
-  if (!/^https?:\/\/.+/.test(url)) { errorBox.textContent = "Pegá la URL completa (con https://)."; return; }
+
+  // Corregir la URL automáticamente: si no trae protocolo, le ponemos https://
+  let cleanUrl = url.trim();
+  if (!/^https?:\/\//i.test(cleanUrl)) {
+    cleanUrl = "https://" + cleanUrl.replace(/^\/+/, "");
+  }
 
   const msg =
     "Hola Holfkings 👋\n" +
     "Quiero mi auditoría web gratuita.\n" +
     "Nombre: " + name + "\n" +
     "Email: " + email + "\n" +
-    "Web a auditar: " + url;
+    "Web a auditar: " + cleanUrl;
 
   const waUrl = "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(msg);
   window.open(waUrl, "_blank", "noopener");
